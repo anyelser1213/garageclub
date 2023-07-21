@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block titulo %}Inicio{% endblock %}
+
+
+
+{% block enlacessecundariosCSS %}
+        
+{% endblock %}
+
+
+{% block menu_superior %}
+
+        <!--Aqui se incluye el menu superior-->
+        {% include "menusuperior.html" %}
+        
+{% endblock%}
+
+{% block menu_lateral %}
+
+        <!--Aqui se incluye el menu superior-->
+        {% include "menulateral.html" with opcionprincipal="dashboard" subopcion="inicio" %}
+            
+{% endblock%}
+
+
+
